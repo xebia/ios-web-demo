@@ -22,6 +22,14 @@
 		2F9F7BB41886C74900363339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7B931886C74900363339 /* UIKit.framework */; };
 		2F9F7BBC1886C74900363339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F7BBA1886C74900363339 /* InfoPlist.strings */; };
 		2F9F7BBE1886C74900363339 /* WebDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BBD1886C74900363339 /* WebDemoTests.m */; };
+		2F9F7BC91886CBF000363339 /* XWDNavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */; };
+		2F9F7BCC1886DB0C00363339 /* XWDBookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */; };
+		2F9F7BCF1886DD1700363339 /* XWDAddBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */; };
+		2F9F7BD81886DFAE00363339 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BD61886DFAE00363339 /* Model.xcdatamodeld */; };
+		2F9F7BDB1886DFEA00363339 /* XWDBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */; };
+		2F9F7C1E1886E1F800363339 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7C1D1886E1F800363339 /* CoreData.framework */; };
+		2F9F7C211886E3FF00363339 /* XWDBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7C201886E3FF00363339 /* XWDBookmarksViewController.m */; };
+		FDF3A0C662BD461B817AB9AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9C5D8B55B44DEDA97B5563 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,20 @@
 		2F9F7BB91886C74900363339 /* WebDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebDemoTests-Info.plist"; sourceTree = "<group>"; };
 		2F9F7BBB1886C74900363339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F9F7BBD1886C74900363339 /* WebDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebDemoTests.m; sourceTree = "<group>"; };
+		2F9F7BC71886CBF000363339 /* XWDNavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDNavigationControllerViewController.h; sourceTree = "<group>"; };
+		2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDNavigationControllerViewController.m; sourceTree = "<group>"; };
+		2F9F7BCA1886DB0C00363339 /* XWDBookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmarkCell.h; sourceTree = "<group>"; };
+		2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmarkCell.m; sourceTree = "<group>"; };
+		2F9F7BCD1886DD1700363339 /* XWDAddBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDAddBookmarkViewController.h; sourceTree = "<group>"; };
+		2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDAddBookmarkViewController.m; sourceTree = "<group>"; };
+		2F9F7BD71886DFAE00363339 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2F9F7BD91886DFEA00363339 /* XWDBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmark.h; sourceTree = "<group>"; };
+		2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmark.m; sourceTree = "<group>"; };
+		2F9F7C1D1886E1F800363339 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2F9F7C1F1886E3FF00363339 /* XWDBookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmarksViewController.h; sourceTree = "<group>"; };
+		2F9F7C201886E3FF00363339 /* XWDBookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmarksViewController.m; sourceTree = "<group>"; };
+		3E9C5D8B55B44DEDA97B5563 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED20365B4814490AAB8D738 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +84,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9F7C1E1886E1F800363339 /* CoreData.framework in Frameworks */,
 				2F9F7B921886C74900363339 /* CoreGraphics.framework in Frameworks */,
 				2F9F7B941886C74900363339 /* UIKit.framework in Frameworks */,
 				2F9F7B901886C74900363339 /* Foundation.framework in Frameworks */,
+				FDF3A0C662BD461B817AB9AC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,7 @@
 				2F9F7BB71886C74900363339 /* WebDemoTests */,
 				2F9F7B8E1886C74900363339 /* Frameworks */,
 				2F9F7B8D1886C74900363339 /* Products */,
+				AED20365B4814490AAB8D738 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +128,12 @@
 		2F9F7B8E1886C74900363339 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F9F7C1D1886E1F800363339 /* CoreData.framework */,
 				2F9F7B8F1886C74900363339 /* Foundation.framework */,
 				2F9F7B911886C74900363339 /* CoreGraphics.framework */,
 				2F9F7B931886C74900363339 /* UIKit.framework */,
 				2F9F7BB11886C74900363339 /* XCTest.framework */,
+				3E9C5D8B55B44DEDA97B5563 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +149,17 @@
 				2F9F7BA81886C74900363339 /* XWDViewController.m */,
 				2F9F7BAA1886C74900363339 /* Images.xcassets */,
 				2F9F7B961886C74900363339 /* Supporting Files */,
+				2F9F7BC71886CBF000363339 /* XWDNavigationControllerViewController.h */,
+				2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */,
+				2F9F7BCA1886DB0C00363339 /* XWDBookmarkCell.h */,
+				2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */,
+				2F9F7BCD1886DD1700363339 /* XWDAddBookmarkViewController.h */,
+				2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */,
+				2F9F7BD61886DFAE00363339 /* Model.xcdatamodeld */,
+				2F9F7BD91886DFEA00363339 /* XWDBookmark.h */,
+				2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */,
+				2F9F7C1F1886E3FF00363339 /* XWDBookmarksViewController.h */,
+				2F9F7C201886E3FF00363339 /* XWDBookmarksViewController.m */,
 			);
 			path = WebDemo;
 			sourceTree = "<group>";
@@ -162,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F9F7BC11886C74900363339 /* Build configuration list for PBXNativeTarget "WebDemo" */;
 			buildPhases = (
+				5CB604AABB2249F89265426F /* Check Pods Manifest.lock */,
 				2F9F7B881886C74900363339 /* Sources */,
 				2F9F7B891886C74900363339 /* Frameworks */,
 				2F9F7B8A1886C74900363339 /* Resources */,
+				96231AA7AA12491896F0EC0A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,13 +289,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CB604AABB2249F89265426F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96231AA7AA12491896F0EC0A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F9F7B881886C74900363339 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9F7BCF1886DD1700363339 /* XWDAddBookmarkViewController.m in Sources */,
+				2F9F7BC91886CBF000363339 /* XWDNavigationControllerViewController.m in Sources */,
+				2F9F7BD81886DFAE00363339 /* Model.xcdatamodeld in Sources */,
+				2F9F7C211886E3FF00363339 /* XWDBookmarksViewController.m in Sources */,
 				2F9F7BA01886C74900363339 /* XWDAppDelegate.m in Sources */,
 				2F9F7BA91886C74900363339 /* XWDViewController.m in Sources */,
+				2F9F7BCC1886DB0C00363339 /* XWDBookmarkCell.m in Sources */,
+				2F9F7BDB1886DFEA00363339 /* XWDBookmark.m in Sources */,
 				2F9F7B9C1886C74900363339 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +469,7 @@
 		};
 		2F9F7BC21886C74900363339 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED20365B4814490AAB8D738 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,6 +483,7 @@
 		};
 		2F9F7BC31886C74900363339 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED20365B4814490AAB8D738 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -475,6 +556,7 @@
 				2F9F7BC31886C74900363339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F9F7BC41886C74900363339 /* Build configuration list for PBXNativeTarget "WebDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -483,8 +565,22 @@
 				2F9F7BC61886C74900363339 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F9F7BD61886DFAE00363339 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F9F7BD71886DFAE00363339 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2F9F7BD71886DFAE00363339 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2F9F7B841886C74900363339 /* Project object */;
 }

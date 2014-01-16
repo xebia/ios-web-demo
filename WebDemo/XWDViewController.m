@@ -7,8 +7,12 @@
 //
 
 #import "XWDViewController.h"
+#import <Touchpose/QTouchposeApplication.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
-@interface XWDViewController ()
+@interface XWDViewController ()<UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -17,13 +21,53 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
+    
+    [self.webView loadRequest:request];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    ((QTouchposeApplication*)[QTouchposeApplication sharedApplication]).showTouches = YES;
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    ((QTouchposeApplication*)[QTouchposeApplication sharedApplication]).showTouches = NO;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)back:(id)sender {
+    [self.webView goBack];
+}
+- (IBAction)forward:(id)sender {
+    [self.webView goForward];
+}
+
+#pragma mark - Web View Delegate
+
+-(void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [[AFNetworkActivityIndicatorManager sharedManager] incrementActivityCount];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    
+    [[AFNetworkActivityIndicatorManager sharedManager] decrementActivityCount];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [[AFNetworkActivityIndicatorManager sharedManager] decrementActivityCount];
 }
 
 @end

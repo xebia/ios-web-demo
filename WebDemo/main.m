@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Touchpose/QTouchposeApplication.h>
 
 #import "XWDAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([XWDAppDelegate class]));
+        return UIApplicationMain(argc, argv, NSStringFromClass([QTouchposeApplication class]), NSStringFromClass([XWDAppDelegate class]));
     }
 }
