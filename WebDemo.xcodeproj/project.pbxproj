@@ -15,16 +15,15 @@
 		2F9F7BA01886C74900363339 /* XWDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7B9F1886C74900363339 /* XWDAppDelegate.m */; };
 		2F9F7BA31886C74900363339 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F7BA11886C74900363339 /* Main_iPhone.storyboard */; };
 		2F9F7BA61886C74900363339 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F7BA41886C74900363339 /* Main_iPad.storyboard */; };
-		2F9F7BA91886C74900363339 /* XWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BA81886C74900363339 /* XWDViewController.m */; };
+		2F9F7BA91886C74900363339 /* XWDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BA81886C74900363339 /* XWDWebViewController.m */; };
 		2F9F7BAB1886C74900363339 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F7BAA1886C74900363339 /* Images.xcassets */; };
 		2F9F7BB21886C74900363339 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7BB11886C74900363339 /* XCTest.framework */; };
 		2F9F7BB31886C74900363339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7B8F1886C74900363339 /* Foundation.framework */; };
 		2F9F7BB41886C74900363339 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7B931886C74900363339 /* UIKit.framework */; };
 		2F9F7BBC1886C74900363339 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F7BBA1886C74900363339 /* InfoPlist.strings */; };
 		2F9F7BBE1886C74900363339 /* WebDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BBD1886C74900363339 /* WebDemoTests.m */; };
-		2F9F7BC91886CBF000363339 /* XWDNavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */; };
 		2F9F7BCC1886DB0C00363339 /* XWDBookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */; };
-		2F9F7BCF1886DD1700363339 /* XWDAddBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */; };
+		2F9F7BCF1886DD1700363339 /* XWDBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BCE1886DD1700363339 /* XWDBookmarkViewController.m */; };
 		2F9F7BD81886DFAE00363339 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BD61886DFAE00363339 /* Model.xcdatamodeld */; };
 		2F9F7BDB1886DFEA00363339 /* XWDBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */; };
 		2F9F7C1E1886E1F800363339 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9F7C1D1886E1F800363339 /* CoreData.framework */; };
@@ -55,20 +54,18 @@
 		2F9F7B9F1886C74900363339 /* XWDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWDAppDelegate.m; sourceTree = "<group>"; };
 		2F9F7BA21886C74900363339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2F9F7BA51886C74900363339 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		2F9F7BA71886C74900363339 /* XWDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWDViewController.h; sourceTree = "<group>"; };
-		2F9F7BA81886C74900363339 /* XWDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWDViewController.m; sourceTree = "<group>"; };
+		2F9F7BA71886C74900363339 /* XWDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWDWebViewController.h; sourceTree = "<group>"; };
+		2F9F7BA81886C74900363339 /* XWDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWDWebViewController.m; sourceTree = "<group>"; };
 		2F9F7BAA1886C74900363339 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F9F7BB01886C74900363339 /* WebDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9F7BB11886C74900363339 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2F9F7BB91886C74900363339 /* WebDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebDemoTests-Info.plist"; sourceTree = "<group>"; };
 		2F9F7BBB1886C74900363339 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F9F7BBD1886C74900363339 /* WebDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebDemoTests.m; sourceTree = "<group>"; };
-		2F9F7BC71886CBF000363339 /* XWDNavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDNavigationControllerViewController.h; sourceTree = "<group>"; };
-		2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDNavigationControllerViewController.m; sourceTree = "<group>"; };
 		2F9F7BCA1886DB0C00363339 /* XWDBookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmarkCell.h; sourceTree = "<group>"; };
 		2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmarkCell.m; sourceTree = "<group>"; };
-		2F9F7BCD1886DD1700363339 /* XWDAddBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDAddBookmarkViewController.h; sourceTree = "<group>"; };
-		2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDAddBookmarkViewController.m; sourceTree = "<group>"; };
+		2F9F7BCD1886DD1700363339 /* XWDBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmarkViewController.h; sourceTree = "<group>"; };
+		2F9F7BCE1886DD1700363339 /* XWDBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmarkViewController.m; sourceTree = "<group>"; };
 		2F9F7BD71886DFAE00363339 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		2F9F7BD91886DFEA00363339 /* XWDBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDBookmark.h; sourceTree = "<group>"; };
 		2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDBookmark.m; sourceTree = "<group>"; };
@@ -145,16 +142,14 @@
 				2F9F7B9F1886C74900363339 /* XWDAppDelegate.m */,
 				2F9F7BA11886C74900363339 /* Main_iPhone.storyboard */,
 				2F9F7BA41886C74900363339 /* Main_iPad.storyboard */,
-				2F9F7BA71886C74900363339 /* XWDViewController.h */,
-				2F9F7BA81886C74900363339 /* XWDViewController.m */,
 				2F9F7BAA1886C74900363339 /* Images.xcassets */,
 				2F9F7B961886C74900363339 /* Supporting Files */,
-				2F9F7BC71886CBF000363339 /* XWDNavigationControllerViewController.h */,
-				2F9F7BC81886CBF000363339 /* XWDNavigationControllerViewController.m */,
+				2F9F7BA71886C74900363339 /* XWDWebViewController.h */,
+				2F9F7BA81886C74900363339 /* XWDWebViewController.m */,
 				2F9F7BCA1886DB0C00363339 /* XWDBookmarkCell.h */,
 				2F9F7BCB1886DB0C00363339 /* XWDBookmarkCell.m */,
-				2F9F7BCD1886DD1700363339 /* XWDAddBookmarkViewController.h */,
-				2F9F7BCE1886DD1700363339 /* XWDAddBookmarkViewController.m */,
+				2F9F7BCD1886DD1700363339 /* XWDBookmarkViewController.h */,
+				2F9F7BCE1886DD1700363339 /* XWDBookmarkViewController.m */,
 				2F9F7BD61886DFAE00363339 /* Model.xcdatamodeld */,
 				2F9F7BD91886DFEA00363339 /* XWDBookmark.h */,
 				2F9F7BDA1886DFEA00363339 /* XWDBookmark.m */,
@@ -327,12 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F9F7BCF1886DD1700363339 /* XWDAddBookmarkViewController.m in Sources */,
-				2F9F7BC91886CBF000363339 /* XWDNavigationControllerViewController.m in Sources */,
+				2F9F7BCF1886DD1700363339 /* XWDBookmarkViewController.m in Sources */,
 				2F9F7BD81886DFAE00363339 /* Model.xcdatamodeld in Sources */,
 				2F9F7C211886E3FF00363339 /* XWDBookmarksViewController.m in Sources */,
 				2F9F7BA01886C74900363339 /* XWDAppDelegate.m in Sources */,
-				2F9F7BA91886C74900363339 /* XWDViewController.m in Sources */,
+				2F9F7BA91886C74900363339 /* XWDWebViewController.m in Sources */,
 				2F9F7BCC1886DB0C00363339 /* XWDBookmarkCell.m in Sources */,
 				2F9F7BDB1886DFEA00363339 /* XWDBookmark.m in Sources */,
 				2F9F7B9C1886C74900363339 /* main.m in Sources */,

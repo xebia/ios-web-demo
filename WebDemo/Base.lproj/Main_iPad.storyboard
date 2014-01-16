@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Bookmarks View Controller-->
+        <!--Bookmarks View Controller - Bookmarks-->
         <scene sceneID="PGe-ot-KZx">
             <objects>
                 <tableViewController id="vNO-l2-tgK" customClass="XWDBookmarksViewController" sceneMemberID="viewController">
@@ -13,22 +13,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="XWDBookmarkCell" rowHeight="100" id="fM7-AN-A9G" customClass="XWDBookmarkCell">
-                                <rect key="frame" x="0.0" y="86" width="768" height="100"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="XWDBookmarkCell" rowHeight="100" id="fM7-AN-A9G" customClass="XWDBookmarkCell">
+                                <rect key="frame" x="0.0" y="22" width="768" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fM7-AN-A9G" id="Nsv-PP-pxD">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="701" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="230-1i-Lfr">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="230-1i-Lfr">
+                                            <rect key="frame" x="10" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="2Da-k8-ggk"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUU-IX-iAP">
-                                            <rect key="frame" x="108" y="39" width="640" height="21"/>
+                                            <rect key="frame" x="118" y="39" width="563" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,7 +37,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="IUU-IX-iAP" firstAttribute="centerY" secondItem="Nsv-PP-pxD" secondAttribute="centerY" id="Ieh-so-ZlW"/>
-                                        <constraint firstItem="230-1i-Lfr" firstAttribute="leading" secondItem="Nsv-PP-pxD" secondAttribute="leading" id="Jtb-fl-88W"/>
+                                        <constraint firstItem="230-1i-Lfr" firstAttribute="leading" secondItem="Nsv-PP-pxD" secondAttribute="leading" constant="10" id="Jtb-fl-88W"/>
                                         <constraint firstItem="IUU-IX-iAP" firstAttribute="top" secondItem="Nsv-PP-pxD" secondAttribute="top" constant="39" id="KMh-cH-MwW"/>
                                         <constraint firstItem="IUU-IX-iAP" firstAttribute="leading" secondItem="230-1i-Lfr" secondAttribute="trailing" constant="8" symbolic="YES" id="QQD-Qg-zNg"/>
                                         <constraint firstItem="230-1i-Lfr" firstAttribute="top" secondItem="Nsv-PP-pxD" secondAttribute="top" id="kRB-N9-bN8"/>
@@ -49,6 +49,7 @@
                                     <outlet property="bookmarkImageView" destination="230-1i-Lfr" id="4Tk-Su-Cv5"/>
                                     <outlet property="bookmarkTitleLabel" destination="IUU-IX-iAP" id="WOw-32-Jea"/>
                                     <segue destination="Pfy-S6-VTZ" kind="push" identifier="OpenWeb" id="JBB-xv-b1l"/>
+                                    <segue destination="c0E-Bq-Iol" kind="push" identifier="EditBookmark" trigger="accessoryAction" id="obf-Pa-ukH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,7 +58,7 @@
                             <outlet property="delegate" destination="vNO-l2-tgK" id="kZh-Xu-4Wv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="k1c-Q8-B8L">
+                    <navigationItem key="navigationItem" title="Bookmarks" id="k1c-Q8-B8L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4ix-4b-EWt">
                             <connections>
                                 <segue destination="c0E-Bq-Iol" kind="push" identifier="AddBookmark" id="S6R-DV-AeD"/>
@@ -69,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="2103" y="-111"/>
         </scene>
-        <!--Add Bookmark View Controller-->
+        <!--Bookmark View Controller-->
         <scene sceneID="qsR-72-QLx">
             <objects>
-                <viewController id="c0E-Bq-Iol" customClass="XWDAddBookmarkViewController" sceneMemberID="viewController">
+                <viewController id="c0E-Bq-Iol" customClass="XWDBookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DID-oO-y2G"/>
                         <viewControllerLayoutGuide type="bottom" id="kGa-8P-GKL"/>
@@ -166,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="2839" y="1158"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="gJa-Xp-uzv">
             <objects>
-                <viewController id="Pfy-S6-VTZ" customClass="XWDViewController" sceneMemberID="viewController">
+                <viewController id="Pfy-S6-VTZ" customClass="XWDWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="80b-Rf-seT"/>
                         <viewControllerLayoutGuide type="bottom" id="P5b-Rj-bda"/>
@@ -252,4 +253,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="obf-Pa-ukH"/>
+    </inferredMetricsTieBreakers>
 </document>

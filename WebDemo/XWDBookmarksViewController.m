@@ -11,7 +11,8 @@
 #import "XWDBookmarkCell.h"
 #import "XWDBookmark.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
-#import "XWDViewController.h"
+#import "XWDWebViewController.h"
+#import "XWDBookmarkViewController.h"
 
 @interface XWDBookmarksViewController ()<NSFetchedResultsControllerDelegate>
 
@@ -155,9 +156,15 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"OpenWeb"]) {
-        XWDViewController *webViewController = segue.destinationViewController;
+        XWDWebViewController *webViewController = segue.destinationViewController;
         XWDBookmark *bookmark = [self.fetchedResultsController objectAtIndexPath:self.tableView.indexPathForSelectedRow];
         webViewController.url = [NSURL URLWithString:bookmark.url];
+        webViewController.title = bookmark.title;
+    } else if ([segue.identifier isEqualToString:@"EditBookmark"]) {
+        XWDBookmarkViewController *bookmarkViewController = segue.destinationViewController;
+        XWDBookmarkCell *cell = sender;
+        XWDBookmark *bookmark = [self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForCell:cell]];
+        bookmarkViewController.bookmark = bookmark;
     }
 }
 

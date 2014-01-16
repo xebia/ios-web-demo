@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Bookmarks View Controller-->
+        <!--Bookmarks View Controller - Bookmarks-->
         <scene sceneID="96z-EZ-dS1">
             <objects>
                 <tableViewController id="Qsy-nh-YX5" customClass="XWDBookmarksViewController" sceneMemberID="viewController">
@@ -13,22 +13,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="XWDBookmarkCell" rowHeight="80" id="PfT-Qt-elu" customClass="XWDBookmarkCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="80"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="XWDBookmarkCell" rowHeight="80" id="PfT-Qt-elu" customClass="XWDBookmarkCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfT-Qt-elu" id="Q0n-lg-Jbs">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-96-zZW">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="786" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-96-zZW">
+                                            <rect key="frame" x="10" y="0.0" width="80" height="79"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="8WS-D3-qnX"/>
+                                                <constraint firstAttribute="width" constant="80" id="WCF-U6-Xhe"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOd-Lu-knB">
-                                            <rect key="frame" x="88" y="29" width="212" height="21"/>
+                                            <rect key="frame" x="98" y="29" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -36,18 +36,19 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Jlp-96-zZW" secondAttribute="bottom" id="RqC-j3-akp"/>
                                         <constraint firstItem="Jlp-96-zZW" firstAttribute="top" secondItem="Q0n-lg-Jbs" secondAttribute="top" id="XZW-ut-io7"/>
                                         <constraint firstItem="nOd-Lu-knB" firstAttribute="leading" secondItem="Jlp-96-zZW" secondAttribute="trailing" constant="8" symbolic="YES" id="Xxg-c1-mQL"/>
-                                        <constraint firstAttribute="trailing" secondItem="nOd-Lu-knB" secondAttribute="trailing" constant="20" symbolic="YES" id="ZR9-3t-YO4"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nOd-Lu-knB" secondAttribute="trailing" constant="20" symbolic="YES" id="ZR9-3t-YO4"/>
                                         <constraint firstItem="nOd-Lu-knB" firstAttribute="centerY" secondItem="Q0n-lg-Jbs" secondAttribute="centerY" id="b6g-aw-ayw"/>
-                                        <constraint firstItem="Jlp-96-zZW" firstAttribute="leading" secondItem="Q0n-lg-Jbs" secondAttribute="leading" id="g1r-6w-KxF"/>
-                                        <constraint firstAttribute="bottom" secondItem="Jlp-96-zZW" secondAttribute="bottom" constant="-1" id="zcH-2b-nDx"/>
+                                        <constraint firstItem="Jlp-96-zZW" firstAttribute="leading" secondItem="Q0n-lg-Jbs" secondAttribute="leading" constant="10" id="g1r-6w-KxF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="bookmarkImageView" destination="Jlp-96-zZW" id="05q-Eh-gca"/>
                                     <outlet property="bookmarkTitleLabel" destination="nOd-Lu-knB" id="JtV-3y-xig"/>
                                     <segue destination="vXZ-lx-hvc" kind="push" identifier="OpenWeb" id="OFY-KM-KLf"/>
+                                    <segue destination="boH-0z-k0h" kind="push" identifier="EditBookmark" trigger="accessoryAction" id="CRh-Po-1A2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,7 +57,7 @@
                             <outlet property="delegate" destination="Qsy-nh-YX5" id="2j3-nW-Qwi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AeA-2i-00M">
+                    <navigationItem key="navigationItem" title="Bookmarks" id="AeA-2i-00M">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nIz-l2-pu7">
                             <connections>
                                 <segue destination="boH-0z-k0h" kind="push" identifier="AddBookmark" id="REK-4G-mQ6"/>
@@ -68,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="524" y="176"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="XWDViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="XWDWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pvO-IF-iUn"/>
                         <viewControllerLayoutGuide type="bottom" id="qdA-Fs-ur5"/>
@@ -126,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="984" y="176"/>
         </scene>
-        <!--Add Bookmark View Controller-->
+        <!--Bookmark View Controller-->
         <scene sceneID="OHC-H5-GWQ">
             <objects>
-                <viewController id="boH-0z-k0h" customClass="XWDAddBookmarkViewController" sceneMemberID="viewController">
+                <viewController id="boH-0z-k0h" customClass="XWDBookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8GR-Ih-IJN"/>
                         <viewControllerLayoutGuide type="bottom" id="W9g-Ux-GZF"/>
@@ -206,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="903" y="864"/>
         </scene>
-        <!--Navigation Controller View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="1fU-bp-9t5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpb-Yp-s8O" customClass="XWDNavigationControllerViewController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpb-Yp-s8O" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mzj-QU-MkF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -234,4 +235,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="CRh-Po-1A2"/>
+    </inferredMetricsTieBreakers>
 </document>

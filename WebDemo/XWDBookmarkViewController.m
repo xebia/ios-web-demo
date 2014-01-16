@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Xebia. All rights reserved.
 //
 
-#import "XWDAddBookmarkViewController.h"
+#import "XWDBookmarkViewController.h"
 #import "XWDAppDelegate.h"
 
-@interface XWDAddBookmarkViewController ()<UITextFieldDelegate>
+@interface XWDBookmarkViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextField *urlField;
 @property (weak, nonatomic) IBOutlet UITextField *imageField;
 
 @end
 
-@implementation XWDAddBookmarkViewController
+@implementation XWDBookmarkViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +31,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    if (self.bookmark) {
+        self.titleField.text = self.bookmark.title;
+        self.urlField.text = self.bookmark.url;
+        self.imageField.text = self.bookmark.imageUrl;
+    }
 }
 
 - (void)didReceiveMemoryWarning

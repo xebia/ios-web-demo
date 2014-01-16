@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Xebia. All rights reserved.
 //
 
-#import "XWDViewController.h"
+#import "XWDWebViewController.h"
 #import <Touchpose/QTouchposeApplication.h>
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
-@interface XWDViewController ()<UIWebViewDelegate>
+@interface XWDWebViewController ()<UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
-@implementation XWDViewController
+@implementation XWDWebViewController
 
 - (void)viewDidLoad
 {

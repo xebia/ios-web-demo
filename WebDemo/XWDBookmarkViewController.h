@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "XWDBookmark.h"
 
-@interface XWDAddBookmarkViewController : UIViewController
+@interface XWDBookmarkViewController : UIViewController
 
 
 @property (strong, nonatomic) XWDBookmark *bookmark;

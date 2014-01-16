@@ -1,5 +1,5 @@
 //
-//  XWDNavigationControllerViewController.h
+//  XWDViewController.h
 //  WebDemo
 //
 //  Created by Lammert Westerhoff on 15/01/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XWDNavigationControllerViewController : UINavigationController
+@interface XWDWebViewController : UIViewController
+
+@property (copy, nonatomic) NSURL *url;
 
 @end
