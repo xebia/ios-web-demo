@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F9F7B8C1886C74900363339 /* WebDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9F7B8C1886C74900363339 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9F7B8F1886C74900363339 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F9F7B911886C74900363339 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2F9F7B931886C74900363339 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -116,7 +116,7 @@
 		2F9F7B8D1886C74900363339 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F9F7B8C1886C74900363339 /* WebDemo.app */,
+				2F9F7B8C1886C74900363339 /* Demo.app */,
 				2F9F7BB01886C74900363339 /* WebDemoTests.xctest */,
 			);
 			name = Products;
@@ -207,7 +207,7 @@
 			);
 			name = WebDemo;
 			productName = WebDemo;
-			productReference = 2F9F7B8C1886C74900363339 /* WebDemo.app */;
+			productReference = 2F9F7B8C1886C74900363339 /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2F9F7BAF1886C74900363339 /* WebDemoTests */ = {
@@ -470,7 +470,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebDemo/WebDemo-Prefix.pch";
 				INFOPLIST_FILE = "WebDemo/WebDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Demo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -484,7 +484,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebDemo/WebDemo-Prefix.pch";
 				INFOPLIST_FILE = "WebDemo/WebDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Demo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
