@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="XWDBookmarkCell" rowHeight="80" id="PfT-Qt-elu" customClass="XWDBookmarkCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="80"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfT-Qt-elu" id="Q0n-lg-Jbs">
                                     <rect key="frame" x="0.0" y="0.0" width="253" height="79"/>
@@ -227,8 +227,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="12" height="20"/>
-        <image name="forward" width="12" height="20"/>
+        <image name="back" width="13" height="21"/>
+        <image name="forward" width="13" height="21"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
