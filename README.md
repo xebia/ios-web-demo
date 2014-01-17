@@ -5,4 +5,5 @@ This is a simple universal iOS app for giving demonstrations of mobile web based
 
 Screenshots
 -----------
-![](http://picpaste.com/iOS_Simulator_Screen_shot_17_Jan_2014_08.11.18-4Tk4kWUV.png)
+![](http://picpaste.com/pics/iOS_Simulator_Screen_shot_17_Jan_2014_08.11.18-JXsPupCU.1389943327.png) 
+![](http://picpaste.com/pics/iOS_Simulator_Screen_shot_17_Jan_2014_08.11.46-JqtLKR7q.1389943281.png)
