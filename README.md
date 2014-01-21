@@ -5,5 +5,5 @@ This is a simple universal iOS app for giving demonstrations of mobile web based
 
 Screenshots
 -----------
-![Imgur](http://i.imgur.com/9oMwFOK.png)
 ![Imgur](http://i.imgur.com/Cib8lOc.png)
+![Imgur](http://i.imgur.com/9oMwFOK.png)
