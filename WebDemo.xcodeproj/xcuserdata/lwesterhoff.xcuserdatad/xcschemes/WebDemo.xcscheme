@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F9F7B8B1886C74900363339"
-               BuildableName = "WebDemo.app"
+               BuildableName = "Demo.app"
                BlueprintName = "WebDemo"
                ReferencedContainer = "container:WebDemo.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9F7B8B1886C74900363339"
-            BuildableName = "WebDemo.app"
+            BuildableName = "Demo.app"
             BlueprintName = "WebDemo"
             ReferencedContainer = "container:WebDemo.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9F7B8B1886C74900363339"
-            BuildableName = "WebDemo.app"
+            BuildableName = "Demo.app"
             BlueprintName = "WebDemo"
             ReferencedContainer = "container:WebDemo.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F9F7B8B1886C74900363339"
-            BuildableName = "WebDemo.app"
+            BuildableName = "Demo.app"
             BlueprintName = "WebDemo"
             ReferencedContainer = "container:WebDemo.xcodeproj">
          </BuildableReference>
