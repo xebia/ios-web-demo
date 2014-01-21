@@ -51,7 +51,11 @@
     }
     
     self.bookmark.title = self.titleField.text;
-    self.bookmark.url = self.urlField.text;
+    NSString *stringUrl = self.urlField.text;
+    if ([stringUrl rangeOfString:@"://"].location == NSNotFound) {
+        stringUrl = [NSString stringWithFormat:@"http://%@", stringUrl];
+    }
+    self.bookmark.url = stringUrl;
     self.bookmark.imageUrl = self.imageField.text;
     
     [MANAGED_OBJECT_CONTEXT save:nil];
